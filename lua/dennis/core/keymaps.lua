@@ -10,3 +10,11 @@ vim.keymap.set('n', "<leader>bd", "<cmd>bdelete<CR>")
 -- Lazy keymaps --
 vim.keymap.set('n', "<leader>l", "<cmd>Lazy<CR>")
 
+vim.keymap.set("x", '"', function()
+  -- Surround selected text with quotes
+  vim.api.nvim_feedkeys('c"', 'n', true) -- Enter change mode and insert quote
+  vim.schedule(function()
+    vim.api.nvim_feedkeys(vim.fn.getreg('"'), 'n', true) -- Paste selection
+    vim.api.nvim_feedkeys('"', 'n', true) -- Insert closing quote
+  end)
+end, { noremap = true, silent = true })

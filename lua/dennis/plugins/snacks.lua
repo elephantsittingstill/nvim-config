@@ -28,7 +28,21 @@ return {
 		},
 	    explorer = { enabled = false }, -- might change later
 	    indent = { enabled = true },
-	    input = { enabled = true },
+	    input = {
+			---@class snacks.input.Config
+			---@field enabled? boolean
+			---@field win? snacks.win.Config|{}
+			---@field icon? string
+			---@field icon_pos? snacks.input.Pos
+			---@field promp_pos? snacks.input.Pos
+			enabled = true,
+			icon = ": ",
+			icon_hl = "SnackInputIcon",
+			icon_pos = "left",
+			prompt_pos = "title",
+			win = { style = "input" },
+			expand = true
+		},
 	    picker = { enabled = false }, -- will want to config
 	    notifier = { enabled = false },
 	    quickfile = { enabled = false },
