@@ -1,11 +1,11 @@
 return {
-	{
+	{ -- mason
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
 		end
 	},
-	{
+	{ -- mason-lspconfig
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
@@ -17,7 +17,7 @@ return {
 			})
 		end
 	},
-	{
+	{ -- lspconfig
 		"neovim/nvim-lspconfig",
 		config = function()
 			local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -25,7 +25,7 @@ return {
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
-				filetypes = { "c" }
+				filetypes = { "c", "h" }
 			})
 			lspconfig.ast_grep.setup({ capabilities = capabilities })
 			lspconfig.hls.setup({ capabilities = capabilities })
