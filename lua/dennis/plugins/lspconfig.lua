@@ -34,7 +34,6 @@ return {
 			-- Diagnostics
 			vim.diagnostic.config({
 				virtual_text = {
-					current_line = true,
 					prefix = "●",
 					spacing = 4,
 				},
