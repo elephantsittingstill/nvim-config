@@ -12,11 +12,17 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"clangd",
-					"ast_grep"
+					"ast_grep",
+					"rust_analyzer"
 				}
 			})
 		end
 	},
+	-- {
+	-- 	"mrcjkb/rustaceanvim",
+	-- 	version = "^5",
+	-- 	lazy = false
+	-- },
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
@@ -25,6 +31,7 @@ return {
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.ast_grep.setup({ capabilities = capabilities })
+			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 
 			-- Lsp Keymaps
 			vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

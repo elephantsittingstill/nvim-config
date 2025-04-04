@@ -5,7 +5,8 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				haskell = { "ormolu" }
+				haskell = { "ormolu" },
+				rust = { "rustftm" }
 			},
 			format_on_save = {
 				timeout_ms = 500,
