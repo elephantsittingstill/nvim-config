@@ -8,6 +8,19 @@ return {
 			local schemes = {
 				darkearth = "darkearth",
 				pywal16 = "pywal16",
+				-- zenbones themes --
+				zenwritten = "zenwritten",
+				neobones = "neobones",
+				vimbones = "vimbones",
+				rosebones = "rosebones",
+				forestbones = "forestbones",
+				nordbones = "nordbones",
+				tokyobones = "tokyobones",
+				seoulbones = "seoulbones",
+				duckbones = "duckbones",
+				zenburned = "zenburned",
+				kanagawabones = "kanagawabones",
+				-- nightfox themes --
 				nightfox = "nightfox",
 				dayfox = "dayfox",
 				dawnfox = "dawnfox",
@@ -26,5 +39,9 @@ return {
 	},
 	{
 		"EdenEast/nightfox.nvim",
+	},
+	{
+		"zenbones-theme/zenbones.nvim",
+		dependencies = "rktjmp/lush.nvim"
 	},
 }

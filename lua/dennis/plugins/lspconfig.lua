@@ -13,7 +13,8 @@ return {
 					"lua_ls",
 					"clangd",
 					"ast_grep",
-					"rust_analyzer"
+					"rust_analyzer",
+					"zls"
 				}
 			})
 		end
@@ -32,6 +33,7 @@ return {
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.ast_grep.setup({ capabilities = capabilities })
 			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+			lspconfig.zls.setup({ capabilities = capabilities })
 
 			-- Lsp Keymaps
 			vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
