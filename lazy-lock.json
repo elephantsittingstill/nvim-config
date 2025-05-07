@@ -7,6 +7,7 @@
   "flash.nvim": { "branch": "main", "commit": "3c942666f115e2811e959eabbdd361a025db8b63" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
   "fzf-lua": { "branch": "main", "commit": "1dcef2467af609e0688f8136b8ea720645c9c41c" },
+  "golf": { "branch": "main", "commit": "abf1bc0c1c4a5482b4a4b36b950b49aaa0f39e69" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
   "image.nvim": { "branch": "master", "commit": "2e2d28b7734b5efdfc1219f4da8a46c761587bc2" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
