@@ -13,6 +13,9 @@ vim.keymap.set('n', "<leader>l", "<cmd>Lazy<CR>")
 -- :noh when press ESC --
 vim.keymap.set('n', "<ESC>", "<cmd>noh<CR>")
 
+vim.keymap.set('i', "jk", "<Esc>")
+vim.keymap.set('i', "kj", "<Esc>")
+
 -- wrap selection in quotes --
 vim.keymap.set("x", '"', function()
 	-- Surround selected text with quotes
